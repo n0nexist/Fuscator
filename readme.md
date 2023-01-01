@@ -23,12 +23,13 @@ Use this simple tool to hide real string constants from decompilation.
 
 # Implement to your code
 <b>Before:</b>
-````
+```
 doSomethingWithSecret("hello");
-````
+```
 <br>
+
 <b>After:</b><br>
-````
+```
 doSomethingWithSecret((new Object() {
     int t;
     public String toString() {
@@ -41,4 +42,4 @@ doSomethingWithSecret((new Object() {
         return new String(buf);
     }
 }.toString()));
-````
+```
