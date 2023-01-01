@@ -27,7 +27,7 @@ Use this simple tool to hide real string constants from decompilation.
 doSomethingWithSecret("hello");
 ````
 <br>
-<b>After:</b>
+<b>After:</b><br>
 ````
 doSomethingWithSecret((new Object() {
     int t;
