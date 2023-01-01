@@ -2,9 +2,9 @@
 Use this simple tool to hide real string constants from decompilation.
 
 # Example
-<i>* compile the code first *</i>
+<i>* compile the code first *</i><br>
 <i>$</i> javac Fuscator.java<br>
-<br>
+<br><i>* example input: *</i><br>
 <i>$</i> java Fuscator<br>
 <i>></i> hello
 
