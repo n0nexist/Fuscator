@@ -1,21 +1,11 @@
-Simple String obfuscator
-====
-
+# Fuscator
 Use this simple tool to hide real string constants from decompilation.
 
-![example][1]
+# Example
+<i>$</i> java Fuscator<br>
+<i>></i> hello
 
-Usage
-----
-
-Generate byte-array from pseudo-random integers.
-
-```
-./obfuscate_string.sh hello
-```
-
-Copy output to your code:
-
+<b>Example output:</b>
 ```
 (new Object() {
     int t;
@@ -31,17 +21,13 @@ Copy output to your code:
 }.toString())
 ```
 
-Result
-----
-
-Before:
-
+# Implement to your code
+<b>Before:</b>
 ````
 doSomethingWithSecret("hello");
 ````
-
-After:
-
+<br>
+<b>After:</b>
 ````
 doSomethingWithSecret((new Object() {
     int t;
@@ -56,5 +42,3 @@ doSomethingWithSecret((new Object() {
     }
 }.toString()));
 ````
-
-[1]: http://2.bp.blogspot.com/-zvc45ju5qs8/U6K8CUfOCCI/AAAAAAAAFYc/5lptaMNmXro/s1600/android-app-secretkey.jpg
